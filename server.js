@@ -32,7 +32,7 @@ app.use(cors());
 
 // app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(bodyParser.raw());
 
 //Express sessions
@@ -72,3 +72,5 @@ const PORT = process.env.PORT || 5500;
 app.listen(PORT, () => {
   console.log(`Server Listening on ${PORT}`);
 });
+
+// PUG, handlebars
